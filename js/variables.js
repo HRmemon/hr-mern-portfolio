@@ -35,7 +35,7 @@ const skills = [
   },
   {
     name: "Docker",
-    level: 50,
+    level: 80,
   },
   {
     name: "Data Science / Deep Learning",
