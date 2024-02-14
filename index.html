@@ -28,6 +28,7 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="js/variables.js"></script>
 
 	<!-- favicons
 	================================================== -->
@@ -76,10 +77,10 @@
 				<div class="col-twelve">
 
 					<h5>Hello, World.</h5>
-					<h1>I'm Hassan Rehan.</h1>
+					<h1>I'm <span id="name"></span>.</h1>
 
 					<p class="intro-position">
-						<span>MERN Full-Stack Developer</span>
+						<span id="job"></span>
 						<!-- <span>UI/UX Designer</span> -->
 					</p>
 
@@ -90,10 +91,9 @@
 			</div>
 		</div> <!-- /intro-content -->
 
-		<ul class="intro-social">
-			<li><a href="https://www.linkedin.com/in/hassan-rehan-memon-749640106/"><i class="fa fa-linkedin"></i></a>
-			</li>
-			<li><a href="https://github.com/HRmemon"><i class="fa fa-github"></i></a></li>
+		<ul class="intro-social" id="">
+			<li id="linkedin"><a href=""><i class="fa fa-linkedin"></i></a></li>
+			<li id="github"><a href=""><i class="fa fa-github"></i></a></li>
 		</ul> <!-- /intro-social -->
 
 	</section> <!-- /intro -->
@@ -113,12 +113,7 @@
 
 					<img src="images/profile-pic.png" alt="Profile Picture">
 
-					<p class="lead">Highly skilled and motivated Web Developer with 3 years of experience, specializing
-						in MERN stack development. Committed to delivering high-quality web applications and solutions.
-						Strong problem-solving abilities and a passion for creating engaging user experiences. Seeking
-						opportunities to leverage my expertise and contribute to innovative projects.
-
-					</p>
+					<p class="lead" id="about-description"></p>
 				</div>
 
 			</div>
@@ -134,69 +129,39 @@
 				<ul class="info-list">
 					<li>
 						<strong>Fullname:</strong>
-						<span>Hassan Rehan Memon</span>
+						<span id="name"></span>
 					</li>
 					<li>
 						<strong>Job:</strong>
-						<span>Freelancer, Full-stack Developer</span>
+						<span id="job">Freelancer, Full-stack Developer</span>
 					</li>
 					<li>
 						<strong>Email:</strong>
-						<span>memonmuhamadhasan@gmail.com</span>
+						<span id="email"></span>
 					</li>
 
 				</ul> <!-- /info-list -->
 
 			</div>
 
-			<div class="col-six tab-full">
+			<div class="col-six tab-full" id="#skills">
 
 				<h3>Skills</h3>
 
-				<ul class="skill-bars">
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>MongoDB</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Express</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>React</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Node.js</strong>
-					</li>
-					<li>
-						<div class="progress percent70"><span>70%</span></div>
-						<strong>PostgreSQL</strong>
-					</li>
-					<li>
-						<div class="progress percent40"><span>40%</span></div>
-						<strong>Django</strong>
-					</li>
-					<li>
-						<div class="progress percent50"><span>50%</span></div>
-						<strong>Docker</strong>
-					</li>
-					<li>
-						<div class="progress percent25"><span>25%</span></div>
-						<strong>Data Science / Deep Learning</strong>
-					</li>
-					<li>
-						<div class="progress percent75"><span>75%</span></div>
-						<strong>Cross Browser Testing & Debugging</strong>
-					</li>
-					<li>
-						<div class="progress percent90"><span>90%</span></div>
-						<strong>Agile Development and Scrum</strong>
-					</li>
-
-
-				</ul> <!-- /skill-bars -->
+				<script> 
+					if (skills !== undefined) {
+						skills.forEach(skill => {
+							document.write(`
+								<ul class="skill-bars">
+									<li>
+										<div class="progress percent${skill.level}"><span>${skill.level}%</span></div>
+										<strong>${skill.name}</strong>
+									</li>
+								</ul> <!-- /skill-bars -->
+							`)
+						})
+					}
+				</script>
 
 			</div>
 
@@ -238,81 +203,30 @@
 
 			<div class="col-twelve">
 
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-					<div class="timeline-header">
-						<h3>TOP DEV SPACE </h3>
-						<!-- <p>April 2019 - December 2019</p> -->
-					</div>
-					<div class="timeline-content">
-						<h4>SENIOR WEB DEVELOPER</h4>
-						<p>At TopDevSpace, I achieved proficiency in React and the AWS stack, delivering successful
-							projects and creating user-friendly interfaces. My contributions helped deploy scalable
-							applications, fostering my passion for software development and web/app expertise.</p>
-					</div>
-				</div>
-				<div class="timeline-block">
-					<div class="timeline-ico">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-					<div class="timeline-header">
-						<h3>Freelance Web Developer</h3>
-						<!-- <p>April 2019 - December 2019</p> -->
-					</div>
-					<div class="timeline-content">
-						<h4>Upwork, Fiverr</h4>
-						<p>Developed a fully functional e-commerce website using the MERN stack. Integrated secure
-							payment gateways for seamless online transactions. Led the development of Incio, a
-							scheduling and business management application. Integrated Zoom and Google Meet APIs to
-							enable users to schedule and host meetings. Implemented a calendar feature that displays
-							scheduled events and meetings. Developed an invoicing module, allowing users to easily
-							generate and send invoices. Implemented customer management functionalities to store and
-							manage customer information. Created and sent business documents such as proposals and
-							contracts using the application.</p>
-					</div>
-				</div> <!-- /timeline-block -->
+				<script>
 
-				<div class="timeline-wrap">
+					if (experiences !== undefined) {
+						experiences.forEach(experience => {
+							document.write(`
+								<div class="timeline-block">
+									<div class="timeline-ico">
+										<i class="fa fa-graduation-cap"></i>
+									</div>
+									<div class="timeline-header">
+										<h3>${experience.title}</h3>
+									<!--	<p>${experience.years}</p>  -->
+									</div>
+									<div class="timeline-content">
+										<h4>${experience.company}</h4>
+										<p>${experience.description}</p>
+									</div>
+								</div> <!-- /timeline-block -->
+							`)
+						})
+					}
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-						<div class="timeline-header">
-							<h3>Software Engineer Intern</h3>
-							<!-- <p>January 2023 - April 2023</p> -->
-						</div>
-						<div class="timeline-content">
-							<h4>Bitnine Global Inc.</h4>
-							<p>Worked on developing and maintaining core web services and websites using Bitnine's
-								RDB+GDB multi-model graph database product. Wrote well-designed and efficient code using
-								the best software development practices. Collaborated with senior developers to update
-								websites and create new features. Contributed to projects involving graph technology,
-								big data, open source, and database management systems.</p>
-						</div>
-					</div> <!-- /timeline-block -->
+				</script>
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-						<div class="timeline-header">
-							<h3>Junior Software Developer</h3>
-							<!-- <p>July 2019 - December 2019</p> -->
-						</div>
-						<div class="timeline-content">
-							<h4>Erays Technology</h4>
-							<p>Contributed to the development of Erays' flagship product, making significant
-								advancements in foot mapping technology. Successfully created a comprehensive heat map
-								of both feet using only 48 sensors, showcasing strong problem-solving and technical
-								skills. Utilized innovative techniques to accurately capture and analyze sensor data,
-								providing valuable insights for foot mapping and analysis purposes. Collaborated with a
-								dedicated team to ensure the accuracy and reliability of the heat map, resulting in a
-								highly effective product.</p>
-						</div>
-					</div> <!-- /timeline-block -->
 
 
 
@@ -335,19 +249,27 @@
 
 				<div class="timeline-wrap">
 
-					<div class="timeline-block">
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-						<div class="timeline-header">
-							<h3>Bachelor of Engineering in Software Engineering</h3>
-							<!-- <p>Not provided</p> -->
-						</div>
-						<div class="timeline-content">
-							<h4>National University of Sciences and Technology (NUST)</h4>
-							<p></p>
-						</div>
-					</div> <!-- /timeline-block -->
+					<script>
+
+						if (education !== undefined) {
+							education.forEach(edu => {
+								document.write(`
+									<div class="timeline-block">
+										<div class="timeline-ico">
+											<i class="fa fa-graduation-cap"></i>
+										</div>
+										<div class="timeline-header">
+											<h3>${edu.degree}</h3>
+											<!-- <p>Not provided</p> -->
+										</div>
+										<div class="timeline-content">
+											<h4>${edu.school}</h4>
+										</div>
+									</div> <!-- /timeline-block -->
+								`)
+							})
+						}
+					</script>
 
 				</div> <!-- /timeline-wrap -->
 
@@ -385,52 +307,20 @@
 
 			<div id="owl-slider" class="owl-carousel services-list">
 
-				<div class="service"> <span class="icon"><i class="icon-earth"></i></span>
-					<div class="service-content">
-						<h3>Web Design</h3>
-						<p class="desc justify">I am a highly skilled and motivated Web Developer with 3 years of
-							experience,
-							specializing in MERN stack development. I am committed to delivering high-quality web
-							applications and solutions, with strong problem-solving abilities and a passion for creating
-							engaging user experiences</p>
-					</div>
-				</div>
-
-				<div class="service"> <span class="icon"><i class="icon-window"></i></span>
-					<div class="service-content">
-						<h3>Web Development (FULL-Stack)</h3>
-						<p class="desc justify">I have expertise in both front-end and back-end web development, with a
-							focus on
-							code structure and architecture, web performance optimization, and agile software
-							development. I have experience working with Bitnine Global Inc. as a Software Engineer
-							Intern.</p>
-					</div>
-				</div>
-
-				<div class="service"> <span class="icon"><i class="
-		fa fa-database
-	"></i></span>
-					<div class="service-content">
-						<h3>Database Modeling</h3>
-						<p class="desc justify">I have experience in database modeling and management systems. During my
-							internship at Bitnine Global Inc., I contributed to projects involving graph technology, big
-							data, open source, and database management systems.</p>
-					</div>
-				</div>
-
-				<div class="service"> <span class="icon"><i class="
-						fa fa-code
-					"></i></span>
-					<div class="service-content">
-						<h3>Maintain Website</h3>
-						<p class="desc justify">I have experience in maintaining websites and ensuring their optimal
-							performance. I have collaborated with senior developers to update websites and create new
-							features, utilizing the best software development practices to write well-designed and
-							efficient code.</p>
-					</div>
-				</div>
-
-
+				<script>
+					if (services !== undefined) {
+						services.forEach(service => {
+							document.write(`
+								<div class="service"> <span class="icon"><i class="${service.icon}"></i></span>
+									<div class="service-content">
+										<h3>${service.name}</h3>
+										<p class="desc justify">${service.description}</p>
+									</div>
+								</div>
+							`)
+						})
+					}
+				</script>
 
 			</div> <!-- /services-list -->
 
@@ -565,7 +455,7 @@
 					<i class="icon-mail"></i>
 				</div>
 				<h5>Email Me At</h5>
-				<p>memonmuhamadhasan@gmail.com</p>
+				<p id="email"></p>
 			</div>
 
 			<div class="col-six tab-full">
@@ -573,7 +463,7 @@
 					<i class="icon-phone"></i>
 				</div>
 				<h5>Call Me At</h5>
-				<p>+923033792612</p>
+				<p id="phone"></p>
 			</div>
 
 

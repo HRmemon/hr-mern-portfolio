@@ -288,4 +288,34 @@
 
 	});		
 
+
+	/*----------------------------------------------------*/
+	/*  Load Data from Variables.js
+	------------------------------------------------------*/
+	$('#linkedin a').attr('href', LINKEDIN);
+	$('#github a').attr('href', GITHUB);
+
+	$('[id="name"]').each(function() {
+		$(this).text(NAME);
+	});
+	$('[id="email"]').each(function() {
+		$(this).text(EMAIL);
+	});
+	$('[id="phone"]').each(function() {
+		$(this).text(PHONE);
+	});
+	$('[id="job"]').each(function() {
+		$(this).text(JOB);
+	});
+	$('[id="about-description"]').each(function() {
+		$(this).text(ABOUT);
+	});
+
+
+	// remove fist .owl-item, if it has height 0
+	if ($('.owl-item').first().height() === 0) {
+		$('.owl-item').first().remove();
+	}
+
+
 })(jQuery);
