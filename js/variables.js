@@ -6,24 +6,24 @@ const GITHUB = "https://github.com/HRmemon";
 const LINKEDIN = "https://www.linkedin.com/in/hassan-rehan-memon-749640106/";
 
 const ABOUT =
-  "Highly skilled and motivated Web Developer with 3 years of experience, specializing in MERN stack development. Committed to delivering high-quality web applications and solutions. Strong problem-solving abilities and a passion for creating engaging user experiences. Seeking opportunities to leverage my expertise and contribute to innovative projects.";
+  "I am a highly skilled and innovative Web Developer with 4 years of experience, specializing in full-stack development with MERN, Django, Docker, and AWS. I excel in creating scalable, high-performance web applications and solutions that drive business success. My expertise spans from front-end design to back-end architecture, with a strong focus on delivering engaging user experiences and solving complex technical challenges.";
 
 const skills = [
   {
     name: "MongoDB",
-    level: 80,
+    level: 90,
   },
   {
     name: "Express",
-    level: 80,
+    level: 90,
   },
   {
     name: "React",
-    level: 80,
+    level: 90,
   },
   {
     name: "Node.js",
-    level: 80,
+    level: 90,
   },
   {
     name: "PostgreSQL",
@@ -31,7 +31,7 @@ const skills = [
   },
   {
     name: "Django",
-    level: 95,
+    level: 70,
   },
   {
     name: "Docker",
@@ -57,30 +57,31 @@ const experiences = [
     title: "Senior Full Stack Developer",
     // years: "2020 - Present",
     description:
-      "At TopDevSpace, I achieved proficiency in React and the AWS stack, delivering successful projects and creating user-friendly interfaces. My contributions helped deploy scalable applications, fostering my passion for software development and web/app expertise.",
+      "At TopDevSpace, I spearheaded the development of cutting-edge web applications utilizing a diverse tech stack, including MERN, Django, Docker, and AWS. I led multiple projects from inception to deployment, ensuring high scalability, performance, and security. My expertise in full-stack development, coupled with a strong command of cloud architecture, allowed me to design and implement solutions that met complex client requirements. My role was pivotal in delivering innovative, user-centric applications that drove business growth and enhanced user experience.",
   },
   {
     company: "Upwork, Fiverr",
     title: "Freelance Full-stack Developer",
     // years: "2019 - 2020",
     description:
-      "Developed a fully functional e-commerce website using the MERN stack. Integrated secure payment gateways for seamless online transactions. Led the development of Incio, a scheduling and business management application. Integrated Zoom and Google Meet APIs to enable users to schedule and host meetings. Implemented a calendar feature that displays scheduled events and meetings. Developed an invoicing module, allowing users to easily generate and send invoices. Implemented customer management functionalities to store and manage customer information. Created and sent business documents such as proposals and contracts using the application.",
+      "Developed robust e-commerce platforms and business management applications using the MERN stack, with a focus on seamless user experience and security. I led the development of Incio, integrating Zoom and Google Meet APIs, implementing scheduling and invoicing features, and streamlining customer management. My ability to quickly adapt to new challenges and deliver high-quality software has been a key factor in the success of my freelance projects.",
   },
   {
     company: "Bitnine Global Inc.",
     title: "Software Engineer Intern",
     // years: "2020",
     description:
-      "Worked on developing and maintaining core web services and websites using Bitnine's RDB+GDB multi-model graph database product. Wrote well-designed and efficient code using the best software development practices. Collaborated with senior developers to update websites and create new features. Contributed to projects involving graph technology, big data, open source, and database management systems.",
+      "Contributed to the development and maintenance of core web services and websites utilizing Bitnine's RDB+GDB multi-model graph database. I implemented efficient, scalable code and collaborated closely with senior developers to introduce new features and optimize existing ones. My work on graph technology and database management systems underscored my commitment to staying at the forefront of software innovation.",
   },
   {
     company: "Erays Technology",
     title: "Junior Software Developer",
     // years: "2019",
     description:
-      "Contributed to the development of Erays' flagship product, making significant advancements in foot mapping technology. Successfully created a comprehensive heat map of both feet using only 48 sensors, showcasing strong problem-solving and technical skills. Utilized innovative techniques to accurately capture and analyze sensor data, providing valuable insights for foot mapping and analysis purposes. Collaborated with a dedicated team to ensure the accuracy and reliability of the heat map, resulting in a highly effective product.",
+      "Played a key role in advancing Erays' flagship foot mapping technology by developing a comprehensive heat map using sensor data. My work demonstrated strong analytical and technical skills, contributing to a product that provides highly accurate and reliable foot mapping. I collaborated with a team to refine data analysis techniques, resulting in enhanced product performance and user satisfaction.",
   },
 ];
+
 
 const education = [
   {
@@ -93,7 +94,7 @@ const services = [
   {
     name: "Web Design",
     description:
-      "I am a highly skilled and motivated Web Developer with 3 years of experience, specializing in MERN stack development. I am committed to delivering high-quality web applications and solutions, with strong problem-solving abilities and a passion for creating engaging user experiences",
+      "I am a highly skilled and motivated Web Developer with 4 years of experience, specializing in MERN stack development. I am committed to delivering high-quality web applications and solutions, with strong problem-solving abilities and a passion for creating engaging user experiences",
     icon: "icon-earth",
   },
 

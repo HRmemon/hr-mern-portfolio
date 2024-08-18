@@ -1495,21 +1495,24 @@ header .logo a {
 }
 
 .intro-info {
+	display: flex;
+	/* align-items: center; */
 	margin-top: 4.2rem;
 	margin-right: -30px;
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 11rem;
-	width: 11rem;
+	/* height: 15rem; */
+	width: 15rem;
+	
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
-	float: left;
+	margin: 3rem ;
 	object-fit: cover;
 }
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+	margin-bottom: 0;
+	padding-left: 1rem;
 }
 
 .about-content {
@@ -1573,12 +1576,16 @@ header .logo a {
 	}
 }
 @media only screen and (max-width:768px) {
+	.intro-info {
+		flex-direction: column;
+		align-items: center;
+	}
 	.intro-info img {
-		height: 8.8rem;
-		width: 8.8rem;
+		height: 23.8rem;
+		width: 18.8rem;
 	}
 	.intro-info .lead {
-		padding-left: 11rem;
+		padding-left: 1rem;
 	}
 	.about-content h3 {
 		text-align: center;
