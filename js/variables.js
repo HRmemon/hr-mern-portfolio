@@ -1,84 +1,91 @@
 const NAME = "HASSAN REHAN";
 const EMAIL = "memonmuhamadhasan@gmail.com";
 const PHONE = "+923033792612";
-const JOB = "Full Stack Developer";
+const JOB = "Senior Software Engineer & CTO";
 const GITHUB = "https://github.com/HRmemon";
 const LINKEDIN = "https://www.linkedin.com/in/hassan-rehan-memon-749640106/";
 
 const ABOUT =
-  "I am a highly skilled and innovative Web Developer with 4 years of experience, specializing in full-stack development with MERN, Django, Docker, and AWS. I excel in creating scalable, high-performance web applications and solutions that drive business success. My expertise spans from front-end design to back-end architecture, with a strong focus on delivering engaging user experiences and solving complex technical challenges.";
+  "Senior Software Engineer and CTO with 5+ years of experience building high-performance web applications. Deeply specialized in the JavaScript/TypeScript ecosystem (Next.js, NestJS) and AWS Cloud Architecture. Transitioned from NoSQL to PostgreSQL for robust data modeling. Proven track record of delivering MVPs in record time, optimizing AI data pipelines, and debugging complex backend concurrency issues.";
 
 const skills = [
+  {
+    name: "JavaScript / TypeScript",
+    level: 95,
+  },
+  {
+    name: "Next.js & React",
+    level: 90,
+  },
+  {
+    name: "Node.js / NestJS",
+    level: 90,
+  },
+  {
+    name: "AWS (EC2, S3, Lambda)",
+    level: 80,
+  },
+  {
+    name: "PostgreSQL & Prisma",
+    level: 85,
+  },
   {
     name: "MongoDB",
     level: 90,
   },
   {
-    name: "Express",
-    level: 90,
-  },
-  {
-    name: "React",
-    level: 90,
-  },
-  {
-    name: "Node.js",
-    level: 90,
-  },
-  {
-    name: "PostgreSQL",
-    level: 70,
-  },
-  {
-    name: "Django",
-    level: 70,
-  },
-  {
-    name: "Docker",
+    name: "Docker / DevOps",
     level: 80,
   },
   {
-    name: "Data Science / Deep Learning",
-    level: 25,
+    name: "Python / Django",
+    level: 80,
   },
   {
-    name: "Cross Browser Testing & Debugging",
+    name: "Redis",
     level: 75,
   },
   {
-    name: "Agile Development and Scrum",
+    name: "Agile & Scrum",
     level: 90,
   },
 ];
 
 const experiences = [
   {
-    company: "Top Dev Space",
-    title: "Senior Full Stack Developer",
-    // years: "2020 - Present",
+    company: "Parhako",
+    title: "Co-Founder & CTO",
+    // years: "Jan 2025 – Present",
     description:
-      "At TopDevSpace, I spearheaded the development of cutting-edge web applications utilizing a diverse tech stack, including MERN, Django, Docker, and AWS. I led multiple projects from inception to deployment, ensuring high scalability, performance, and security. My expertise in full-stack development, coupled with a strong command of cloud architecture, allowed me to design and implement solutions that met complex client requirements. My role was pivotal in delivering innovative, user-centric applications that drove business growth and enhanced user experience.",
+      "Founded and architected an AI-powered platform. Built a type-safe application using Next.js and Node.js/Express. Designed complex relational schemas using PostgreSQL and Prisma, prioritizing data integrity. Integrated Generative AI APIs, reducing costs by 60% through aggressive regex-based data cleaning and token optimization. Deployed cost-efficient infrastructure on AWS (EC2, S3, SES) and built automated data scraping and cleaning pipelines.",
   },
   {
-    company: "Upwork, Fiverr",
-    title: "Freelance Full-stack Developer",
-    // years: "2019 - 2020",
+    company: "TopDevSpace LLC",
+    title: "Senior Software Engineer",
+    // years: "Aug 2023 – Dec 2024 & Oct 2025 – Dec 2025",
     description:
-      "Developed robust e-commerce platforms and business management applications using the MERN stack, with a focus on seamless user experience and security. I led the development of Incio, integrating Zoom and Google Meet APIs, implementing scheduling and invoicing features, and streamlining customer management. My ability to quickly adapt to new challenges and deliver high-quality software has been a key factor in the success of my freelance projects.",
+      "Recalled to architect and ship a critical product using Next.js and NestJS, delivering a production-ready Full Stack MVP in just 4 sprints. Integrated Stripe, QuickBooks, and LLM APIs. Previously managed data processing on HPC clusters, optimizing logic for a 70% time reduction, and spearheaded a greenfield Microservices initiative implementing AWS best practices and distributed system architecture.",
+  },
+  {
+    company: "Incio",
+    title: "Full Stack Developer",
+    // years: "Jan 2023 – April 2023",
+    description:
+      "Developed a business management SaaS platform using the MERN Stack. Integrated Zoom and Google Meet APIs to enable users to schedule and host meetings directly within the app. Built custom invoicing modules and a customer management system to digitize client workflows.",
   },
   {
     company: "Bitnine Global Inc.",
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     // years: "2020",
     description:
-      "Contributed to the development and maintenance of core web services and websites utilizing Bitnine's RDB+GDB multi-model graph database. I implemented efficient, scalable code and collaborated closely with senior developers to introduce new features and optimize existing ones. My work on graph technology and database management systems underscored my commitment to staying at the forefront of software innovation.",
+      "Developed core web services using Bitnine's AgensGraph (RDB+GDB multi-model database). Worked on data visualization tools for graph technologies and Big Data integration, ensuring efficient and scalable code for core services.",
   },
   {
     company: "Erays Technology",
-    title: "Junior Software Developer",
-    // years: "2019",
+    title: "Software Engineering Intern",
+    // years: "Apr 2022 – June 2022",
     description:
-      "Played a key role in advancing Erays' flagship foot mapping technology by developing a comprehensive heat map using sensor data. My work demonstrated strong analytical and technical skills, contributing to a product that provides highly accurate and reliable foot mapping. I collaborated with a team to refine data analysis techniques, resulting in enhanced product performance and user satisfaction.",
+      "Successfully managed a full-time internship while completing 3rd-year university coursework. Contributed to the flagship foot-mapping product using sensor data and developed a heat-map visualization using data from 48 distinct pressure sensors to aid in the technical analysis of foot posture.",
   },
 ];
 
@@ -88,34 +95,35 @@ const education = [
     school: "National University of Sciences and Technology (NUST)",
     degree: "Bachelor of Engineering in Software Engineering",
   },
+  {
+    school: "Other Certifications",
+    degree: "Advanced Node.js, Modern React with Redux",
+  }
 ];
 
 const services = [
   {
-    name: "Web Design",
+    name: "Full Stack Architecture",
     description:
-      "I am a highly skilled and motivated Web Developer with 4 years of experience, specializing in MERN stack development. I am committed to delivering high-quality web applications and solutions, with strong problem-solving abilities and a passion for creating engaging user experiences",
-    icon: "icon-earth",
-  },
-
-  {
-    name: "Web Development (FULL-Stack)",
-    description:
-      "I have expertise in both front-end and back-end web development, with a focus on code structure and architecture, web performance optimization, and agile software development. I have experience working with Bitnine Global Inc. as a Software Engineer Intern.",
+      "Architecting scalable, type-safe web applications using the Next.js and Node.js/NestJS ecosystem. I prioritize robust data modeling with PostgreSQL/Prisma and ensure high performance from day one.",
     icon: "icon-window",
   },
-
   {
-    name: "Database Modeling",
+    name: "Cloud & DevOps (AWS)",
     description:
-      "I have experience in database modeling and management systems. During my internship at Bitnine Global Inc., I contributed to projects involving graph technology, big data, open source, and database management systems.",
+      "Designing and deploying cost-efficient cloud infrastructure on AWS (EC2, S3, RDS, Lambda). I implement CI/CD pipelines, Docker containerization, and distributed system best practices.",
+    icon: "icon-earth",
+  },
+  {
+    name: "AI Integration",
+    description:
+      "Integrating Generative AI APIs (LLMs) into web platforms. I focus on token optimization, cost reduction, and building automated data pipelines for training or context generation.",
     icon: "fa fa-database",
   },
-
   {
-    name: "Maintain Website",
+    name: "MVP Development",
     description:
-      "I have experience in maintaining websites and ensuring their optimal performance. I have collaborated with senior developers to update websites and create new features, utilizing the best software development practices to write well-designed and efficient code.",
-    icon: "fa fa-code",
+      "Rapidly delivering production-ready MVPs. I specialize in taking projects from ideation to go-to-market launch, handling everything from frontend design to backend concurrency and payment integrations.",
+    icon: "fa fa-rocket",
   },
 ];
