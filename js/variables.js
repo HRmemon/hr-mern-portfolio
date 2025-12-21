@@ -150,7 +150,7 @@ const stats = [
 	},
 	{
 		icon: "icon-clock",
-		count: 5000,
+		count: 10000,
 		title: "Hours",
 	},
 ];
