@@ -341,86 +341,25 @@
 
 				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list" style="display: flex; flex-wrap: wrap; justify-content: center;">
 
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-pencil-ruler"></i>
-						</div>
-
-						<h3 class="stat-count">
-							50
-						</h3>
-
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							30
-						</h3>
-
-						<h5 class="stat-title">
-							Happy Clients
-						</h5>
-
-					</div> <!-- /stat -->
-
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-light-bulb"></i>
-						</div>
-
-						<h3 class="stat-count">
-							20
-						</h3>
-
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-cup"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1800
-						</h3>
-
-						<h5 class="stat-title">
-							Coffee Cups
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							900
-						</h3>
-
-						<h5 class="stat-title">
-							Hours
-						</h5>
-
-					</div><!-- /stat -->
+					<script>
+						if (stats !== undefined) {
+							stats.forEach(stat => {
+								document.write(`
+									<div class="bgrid stat">
+										<div class="icon-part">
+											<i class="${stat.icon}"></i>
+										</div>
+										<h3 class="stat-count">
+											${stat.count}
+										</h3>
+										<h5 class="stat-title">
+											${stat.title}
+										</h5>
+									</div> <!-- /stat -->
+								`)
+							})
+						}
+					</script>
 
 				</div> <!-- /stats-list -->
 
