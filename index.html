@@ -208,6 +208,17 @@
 
 				<script>
 
+					function formatDate(dateStr) {
+						if (!dateStr) return '';
+						if (dateStr.toLowerCase() === 'present') return 'Present';
+						const parts = String(dateStr).split('-');
+						const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+						if (parts.length === 2) {
+							return months[parseInt(parts[1]) - 1] + ' ' + parts[0];
+						}
+						return dateStr;
+					}
+
 					if (experiences !== undefined) {
 						experiences.forEach(experience => {
 							document.write(`
@@ -217,11 +228,11 @@
 									</div>
 									<div class="timeline-header">
 										<h3>${experience.title}</h3>
-									<!--	<p>${experience.years}</p>  -->
+										<p>${formatDate(experience.startDate)} - ${formatDate(experience.endDate)}</p>
 									</div>
 									<div class="timeline-content">
-										<h4>${experience.company}</h4>
-										<p>${experience.description}</p>
+										<h4>${experience.company}${experience.location ? ', ' + experience.location : ''}</h4>
+										${experience.highlights ? '<ul>' + experience.highlights.map(h => '<li>' + h + '</li>').join('') + '</ul>' : ''}
 									</div>
 								</div> <!-- /timeline-block -->
 							`)

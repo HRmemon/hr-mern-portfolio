@@ -54,38 +54,78 @@ const skills = [
 const experiences = [
 	{
 		company: "Parhako",
-		title: "Co-Founder & CTO",
-		// years: "Jan 2025 – Present",
-		description:
-			"Founded and architected an AI-powered platform. Built a type-safe application using Next.js and Node.js/Express. Designed complex relational schemas using PostgreSQL and Prisma, prioritizing data integrity. Integrated Generative AI APIs, reducing costs by 60% through aggressive regex-based data cleaning and token optimization. Deployed cost-efficient infrastructure on AWS (EC2, S3, SES) and built automated data scraping and cleaning pipelines.",
+		title: "Lead Software Engineer",
+		startDate: "2025-03",
+		endDate: "present",
+		location: "Pakistan",
+		highlights: [
+			"Led backend architecture and development for an AI SaaS platform using Next.js, Express, TypeScript, PostgreSQL, Docker, and AWS.",
+			"Designed an LLM orchestration layer that coordinated 100+ API keys across multiple providers with built-in rate limiting, retry logic, fallback strategies, and load distribution. Reduced inference costs while maintaining reliability.",
+			"Architected AI processing pipelines for MCQ generation with stages for document chunking, structured output generation, automated validation, and response aggregation.",
+			"Built real-time systems for live mock tests, concurrent sessions, and leaderboards that handled high-volume student activity.",
+			"Introduced validation passes using regex checks and secondary LLM verification to catch bad output before it reached users.",
+			"Managed AWS infrastructure and deployment workflows using Terraform, Docker, S3, SES, and load-balanced containerized services with ECS.",
+			"Worked closely with product and engineering teams to prioritize features, improve internal tooling, and ship production systems quickly.",
+		],
 	},
 	{
 		company: "TopDevSpace LLC",
 		title: "Senior Software Engineer",
-		// years: "Aug 2023 – Dec 2024 & Oct 2025 – Dec 2025",
-		description:
-			"Recalled to architect and ship a critical product using Next.js and NestJS, delivering a production-ready Full Stack MVP in just 4 sprints. Integrated Stripe, QuickBooks, and LLM APIs. Previously managed data processing on HPC clusters, optimizing logic for a 70% time reduction, and spearheaded a greenfield Microservices initiative implementing AWS best practices and distributed system architecture.",
+		startDate: "2024-04",
+		endDate: "2025-02",
+		location: "Remote",
+		highlights: [
+			"Managed Django data pipelines on HPC clusters and resolved orchestration race conditions, cutting processing time by 70%.",
+			"Integrated Stripe and QuickBooks workflows into AWS Elasticsearch and LLM-based reporting systems for automated financial summaries.",
+			"Worked with product and infrastructure teams to ship backend services and integrations.",
+		],
 	},
 	{
-		company: "Incio",
-		title: "Full Stack Developer",
-		// years: "Jan 2023 – April 2023",
-		description:
-			"Developed a business management SaaS platform using the MERN Stack. Integrated Zoom and Google Meet APIs to enable users to schedule and host meetings directly within the app. Built custom invoicing modules and a customer management system to digitize client workflows.",
+		company: "TopDevSpace LLC",
+		title: "Software Engineer",
+		startDate: "2023-08",
+		endDate: "2024-03",
+		location: "Remote",
+		highlights: [
+			"Decoupled a large Angular and Node.js monorepo into separate repositories, which fixed recurring CI/CD failures and unblocked the QA team.",
+			"Delivered a SaaS MVP in four sprints using NestJS and PostgreSQL in collaboration with product stakeholders.",
+			"Improved deployment workflows and backend maintainability across multiple services.",
+		],
 	},
 	{
 		company: "Bitnine Global Inc.",
-		title: "Software Engineer",
-		// years: "2020",
-		description:
-			"Developed core web services using Bitnine's AgensGraph (RDB+GDB multi-model database). Worked on data visualization tools for graph technologies and Big Data integration, ensuring efficient and scalable code for core services.",
+		title: "Software Engineering Intern",
+		startDate: "2023-04",
+		endDate: "2023-09",
+		location: "Remote",
+		highlights: [
+			"Wrote documentation and answered developer questions about PostgreSQL and Sequelize.",
+			"Answered 40+ database engineering questions on StackOverflow, reaching roughly 29,000 developers.",
+			"Built frontend components for a database visualization dashboard using JavaScript and CSS.",
+		],
 	},
 	{
 		company: "Erays Technology",
 		title: "Software Engineering Intern",
-		// years: "Apr 2022 – June 2022",
-		description:
-			"Successfully managed a full-time internship while completing 3rd-year university coursework. Contributed to the flagship foot-mapping product using sensor data and developed a heat-map visualization using data from 48 distinct pressure sensors to aid in the technical analysis of foot posture.",
+		startDate: "2022-04",
+		endDate: "2022-06",
+		location: "Pakistan",
+		highlights: [
+			"Built a real-time foot posture heat-map visualization system using JavaScript, Python, and SVG rendering.",
+			"Wrote interpolation and SVG transformation scripts to turn sensor data into smooth visual maps.",
+		],
+	},
+	{
+		company: "Incio",
+		title: "Freelance Software Engineer",
+		startDate: "2020-06",
+		endDate: "2022-01",
+		location: "Remote",
+		highlights: [
+			"Built scheduling and meeting integrations using Zoom and Google Meet APIs.",
+			"Developed invoicing and calendar modules for a business management SaaS platform.",
+			"Implemented backend and frontend features with React, Node.js, and MongoDB.",
+		],
 	},
 ];
 
